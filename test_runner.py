@@ -1,5 +1,7 @@
 import subprocess
 import os
+
+from code_generator import generate_test_code  # Import the missing function
 # Assuming your Java project is structured correctly
 JAVA_TEST_DIR = "/home/sanumenonmadhusoodanan/AgentAI/Eclipse/mvnProjectws/AIImplementation/src/test/java/AIImplementation/AIImplementation" # Adjust path
 MAVEN_COMMAND = ["mvn", "test"] # Or ["gradle", "test"]
@@ -31,5 +33,5 @@ def run_java_test(java_code, test_class_name="SampleTestNgTest"):
             return "ERROR"
 
 # Example usage:
-# generated_code = "..." # Code from code_generator.py
-# run_java_test(generated_code, "MyDynamicLoginTest")
+#generated_code = generate_test_code("Write a login test for Firefox using username 'test@example.com' and password 'password123' on a page with id='username', id='password', and id='submitBtn'") # Code from code_generator.py
+#print(run_java_test(generated_code, "MyDynamicLoginTest"))

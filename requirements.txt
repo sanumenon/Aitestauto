@@ -1,0 +1,10 @@
+langchain
+openai  # If using OpenAI API
+google-generativeai # If using Gemini API
+beautifulsoup4
+lxml
+requests
+chromadb # Embedded within Python app, not standalone service
+sentence-transformers
+streamlit # For the UI within the same pod
+python-dotenv
